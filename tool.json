@@ -1,0 +1,242 @@
+{
+  "tool": {
+    "id": "risco-relativo-e-odds-ratio",
+    "title": "Risco relativo e odds ratio",
+    "short": "Medidas de associação da tabela 2×2 com IC 95%",
+    "spec": [
+      "medicina-preventiva-e-social",
+      "medicina-de-familia-e-comunidade",
+      "medicina-do-trabalho"
+    ],
+    "desc": "Calcule risco relativo (coorte ou ensaio) ou odds ratio (caso-controle) de uma tabela 2×2, com intervalo de confiança de 95% e diferença de risco.",
+    "lead": "Mede a associação entre uma exposição e um desfecho em estudos de coorte, ensaios clínicos (risco relativo) e estudos caso-controle (odds ratio).",
+    "fields": [
+      [
+        "desenho",
+        "Desenho do estudo",
+        "radio",
+        {
+          "opts": {
+            "coorte": "Coorte ou ensaio clínico",
+            "caso": "Caso-controle"
+          }
+        }
+      ],
+      [
+        "a",
+        "Expostos <strong>com</strong> o desfecho (a)",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "20"
+        }
+      ],
+      [
+        "b",
+        "Expostos <strong>sem</strong> o desfecho (b)",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "80"
+        }
+      ],
+      [
+        "c",
+        "Não expostos <strong>com</strong> o desfecho (c)",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "10"
+        }
+      ],
+      [
+        "d",
+        "Não expostos <strong>sem</strong> o desfecho (d)",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "90"
+        }
+      ]
+    ],
+    "formula": "<p><strong>RR</strong> = [a/(a+b)] / [c/(c+d)], com EP(ln RR) = √(1/a − 1/(a+b) + 1/c − 1/(c+d)) (Katz, 1978).</p><p><strong>OR</strong> = (a × d) / (b × c), com EP(ln OR) = √(1/a + 1/b + 1/c + 1/d) (Woolf, 1955).</p><p>IC 95% = exp(ln medida ± 1,96 × EP). Com alguma casela zero, soma-se 0,5 a todas (correção de Haldane).</p>",
+    "table": [
+      [
+        "Resultado",
+        "Interpretação"
+      ],
+      [
+        "IC 95% todo acima de 1",
+        "Associação positiva (fator de risco)"
+      ],
+      [
+        "IC 95% inclui 1",
+        "Sem associação estatisticamente significativa"
+      ],
+      [
+        "IC 95% todo abaixo de 1",
+        "Associação negativa (fator de proteção)"
+      ]
+    ],
+    "tips": [
+      "Em <strong>estudo caso-controle</strong> só a odds ratio é válida: o pesquisador escolhe quantos casos e controles entram, então a incidência (e o RR) não pode ser calculada.",
+      "Quando o desfecho é raro (menos de 10% nos grupos), a OR se aproxima do RR. Com desfecho frequente, a OR exagera a associação.",
+      "Associação não é causalidade: avalie confusão, viés de seleção e de informação, temporalidade e gradiente dose-resposta.",
+      "Estas são medidas brutas. Para controlar fatores de confusão, use análise estratificada (Mantel-Haenszel) ou regressão.",
+      "Informe também a diferença de risco: um RR de 2 pode significar passar de 1 para 2 por 10 mil ou de 20% para 40%."
+    ],
+    "sources": [
+      [
+        "Katz D, Baptista J, Azen SP, Pike MC. Obtaining confidence intervals for the risk ratio in cohort studies. Biometrics, 1978.",
+        "https://doi.org/10.2307/2530610"
+      ],
+      [
+        "Woolf B. On estimating the relation between blood group and disease. Ann Hum Genet, 1955.",
+        "https://doi.org/10.1111/j.1469-1809.1955.tb01348.x"
+      ],
+      [
+        "Bland JM, Altman DG. Statistics Notes: The odds ratio. BMJ, 2000.",
+        "https://doi.org/10.1136/bmj.320.7247.1468"
+      ]
+    ],
+    "cases": [
+      [
+        "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        {
+          "desenho": "coorte",
+          "a": 20,
+          "b": 80,
+          "c": 10,
+          "d": 90
+        },
+        {
+          "raw": {
+            "rr": 2,
+            "rrLo": 0.987,
+            "rrHi": 4.054,
+            "or": 2.25,
+            "orLo": 0.994,
+            "orHi": 5.092
+          },
+          "level": "info",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        {
+          "desenho": "coorte",
+          "a": 30,
+          "b": 70,
+          "c": 10,
+          "d": 90
+        },
+        {
+          "raw": {
+            "rr": 3,
+            "rrLo": 1.551,
+            "rrHi": 5.803
+          },
+          "level": "high",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        {
+          "desenho": "caso",
+          "a": 30,
+          "b": 70,
+          "c": 10,
+          "d": 90
+        },
+        {
+          "raw": {
+            "or": 3.857,
+            "orLo": 1.767,
+            "orHi": 8.421
+          },
+          "main": "3,86",
+          "level": "high",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        {
+          "desenho": "coorte",
+          "a": 10,
+          "b": 90,
+          "c": 30,
+          "d": 70
+        },
+        {
+          "raw": {
+            "rr": 0.3333,
+            "rrLo": 0.1723,
+            "rrHi": 0.6448
+          },
+          "level": "low",
+          "tol": 0.005
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 1,
+      "passed": 1,
+      "cases": [
+        {
+          "label": "Riscos idênticos produzem RR=OR=1",
+          "input": {
+            "desenho": "coorte",
+            "a": 30,
+            "b": 70,
+            "c": 60,
+            "d": 140
+          },
+          "expected": {
+            "rr": 1,
+            "or": 1
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}

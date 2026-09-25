@@ -1,0 +1,114 @@
+[
+  {
+    "label": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "raw": {
+        "rr": 2,
+        "rrLo": 0.987,
+        "rrHi": 4.054,
+        "or": 2.25,
+        "orLo": 0.994,
+        "orHi": 5.092
+      },
+      "level": "info",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+    "input": {
+      "desenho": "coorte",
+      "a": 30,
+      "b": 70,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "raw": {
+        "rr": 3,
+        "rrLo": 1.551,
+        "rrHi": 5.803
+      },
+      "level": "high",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "desenho": "coorte",
+      "a": 30,
+      "b": 70,
+      "c": 10,
+      "d": 90
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+    "input": {
+      "desenho": "caso",
+      "a": 30,
+      "b": 70,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "raw": {
+        "or": 3.857,
+        "orLo": 1.767,
+        "orHi": 8.421
+      },
+      "main": "3,86",
+      "level": "high",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "desenho": "caso",
+      "a": 30,
+      "b": 70,
+      "c": 10,
+      "d": 90
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+    "input": {
+      "desenho": "coorte",
+      "a": 10,
+      "b": 90,
+      "c": 30,
+      "d": 70
+    },
+    "expected": {
+      "raw": {
+        "rr": 0.3333,
+        "rrLo": 0.1723,
+        "rrHi": 0.6448
+      },
+      "level": "low",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "desenho": "coorte",
+      "a": 10,
+      "b": 90,
+      "c": 30,
+      "d": 70
+    },
+    "expandedZeroOptions": []
+  }
+]
