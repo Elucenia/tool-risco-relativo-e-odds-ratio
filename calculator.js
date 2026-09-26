@@ -1,11 +1,11 @@
-/* tool-risco-relativo-e-odds-ratio · Elucenia · https://github.com/Elucenia/tool-risco-relativo-e-odds-ratio
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-risco-relativo-e-odds-ratio · ELUCENIA · https://github.com/Elucenia/tool-risco-relativo-e-odds-ratio
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"risco-relativo-e-odds-ratio","title":"Risco relativo e odds ratio","fields":[["desenho","Desenho do estudo","radio",{"opts":{"coorte":"Coorte ou ensaio clínico","caso":"Caso-controle"}}],["a","Expostos <strong>com</strong> o desfecho (a)","num",{"min":0,"max":1000000,"step":1,"ph":"20"}],["b","Expostos <strong>sem</strong> o desfecho (b)","num",{"min":0,"max":1000000,"step":1,"ph":"80"}],["c","Não expostos <strong>com</strong> o desfecho (c)","num",{"min":0,"max":1000000,"step":1,"ph":"10"}],["d","Não expostos <strong>sem</strong> o desfecho (d)","num",{"min":0,"max":1000000,"step":1,"ph":"90"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

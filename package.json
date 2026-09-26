@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-risco-relativo-e-odds-ratio",
   "version": "0.1.0",
-  "description": "Risco relativo e odds ratio · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Risco relativo e odds ratio · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
