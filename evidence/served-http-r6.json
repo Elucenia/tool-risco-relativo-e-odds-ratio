@@ -1,0 +1,1191 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "risco-relativo-e-odds-ratio",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/risco-relativo-e-odds-ratio/calculator.js",
+    "sha256": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f",
+    "bytes": 6301
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "risco-relativo-e-odds-ratio",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+      "originalInput": {
+        "desenho": "coorte",
+        "a": 20,
+        "b": 80,
+        "c": 10,
+        "d": 90
+      },
+      "input": {
+        "desenho": "coorte",
+        "a": 20,
+        "b": 80,
+        "c": 10,
+        "d": 90
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rr": 2,
+          "rrLo": 0.987,
+          "rrHi": 4.054,
+          "or": 2.25,
+          "orLo": 0.994,
+          "orHi": 5.092
+        },
+        "level": "info",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "2,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+        "raw": {
+          "rr": 2,
+          "rrLo": 0.9865632012325182,
+          "rrHi": 4.0544792214049545,
+          "or": 2.25,
+          "orLo": 0.9942948858766125,
+          "orHi": 5.091547861615204
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "desenho": "coorte",
+            "a": 20,
+            "b": 80,
+            "c": 10,
+            "d": 90
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+          "startedAt": "2026-10-05T17:39:41.183Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "risco-relativo-e-odds-ratio",
+              "main": [
+                "2,00",
+                ""
+              ],
+              "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+              "raw": {
+                "rr": 2,
+                "rrLo": 0.9865632012325182,
+                "rrHi": 4.0544792214049545,
+                "or": 2.25,
+                "orLo": 0.9942948858766125,
+                "orHi": 5.091547861615204
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6ddff62202e308cbaade6436f660873bc3d74251bc5c3d3bc9d24a5aeeb302c8",
+          "bytes": 283,
+          "elapsedMs": 3.7678000000014435
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "startedAt": "2026-10-05T17:39:41.183Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "risco-relativo-e-odds-ratio",
+            "main": [
+              "2,00",
+              ""
+            ],
+            "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+            "raw": {
+              "rr": 2,
+              "rrLo": 0.9865632012325182,
+              "rrHi": 4.0544792214049545,
+              "or": 2.25,
+              "orLo": 0.9942948858766125,
+              "orHi": 5.091547861615204
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6ddff62202e308cbaade6436f660873bc3d74251bc5c3d3bc9d24a5aeeb302c8",
+        "bytes": 283,
+        "elapsedMs": 3.7678000000014435
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rr",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 0.005,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrLo",
+            "expected": 0.987,
+            "obtained": 0.9865632012325182,
+            "tolerance": 0.005,
+            "difference": 0.00043679876748181634,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrHi",
+            "expected": 4.054,
+            "obtained": 4.0544792214049545,
+            "tolerance": 0.005,
+            "difference": 0.00047922140495426646,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.or",
+            "expected": 2.25,
+            "obtained": 2.25,
+            "tolerance": 0.005,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.orLo",
+            "expected": 0.994,
+            "obtained": 0.9942948858766125,
+            "tolerance": 0.005,
+            "difference": 0.0002948858766125273,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.orHi",
+            "expected": 5.092,
+            "obtained": 5.091547861615204,
+            "tolerance": 0.005,
+            "difference": 0.00045213838479529755,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rr",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrLo",
+            "expected": 0.9865632012325182,
+            "obtained": 0.9865632012325182,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrHi",
+            "expected": 4.0544792214049545,
+            "obtained": 4.0544792214049545,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.or",
+            "expected": 2.25,
+            "obtained": 2.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orLo",
+            "expected": 0.9942948858766125,
+            "obtained": 0.9942948858766125,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orHi",
+            "expected": 5.091547861615204,
+            "obtained": 5.091547861615204,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2,00",
+            "obtained": "2,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "risco-relativo-e-odds-ratio",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+      "originalInput": {
+        "desenho": "coorte",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "input": {
+        "desenho": "coorte",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rr": 3,
+          "rrLo": 1.551,
+          "rrHi": 5.803
+        },
+        "level": "high",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "3,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "desenho": "coorte",
+            "a": 30,
+            "b": 70,
+            "c": 10,
+            "d": 90
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+          "startedAt": "2026-10-05T17:39:41.496Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "risco-relativo-e-odds-ratio",
+              "main": [
+                "3,00",
+                ""
+              ],
+              "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+              "raw": {
+                "rr": 2.9999999999999996,
+                "rrLo": 1.5508297114721117,
+                "rrHi": 5.803345095482356,
+                "or": 3.857142857142857,
+                "orLo": 1.7666027787432017,
+                "orHi": 8.421559843233334
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "537eb15908749e109fecadb8cceabedd008f0a78455c0be1dcfc4d907bfc2a8a",
+          "bytes": 312,
+          "elapsedMs": 4.351800000004005
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "startedAt": "2026-10-05T17:39:41.496Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "risco-relativo-e-odds-ratio",
+            "main": [
+              "3,00",
+              ""
+            ],
+            "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+            "raw": {
+              "rr": 2.9999999999999996,
+              "rrLo": 1.5508297114721117,
+              "rrHi": 5.803345095482356,
+              "or": 3.857142857142857,
+              "orLo": 1.7666027787432017,
+              "orHi": 8.421559843233334
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "537eb15908749e109fecadb8cceabedd008f0a78455c0be1dcfc4d907bfc2a8a",
+        "bytes": 312,
+        "elapsedMs": 4.351800000004005
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rr",
+            "expected": 3,
+            "obtained": 2.9999999999999996,
+            "tolerance": 0.005,
+            "difference": 4.440892098500626e-16,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrLo",
+            "expected": 1.551,
+            "obtained": 1.5508297114721117,
+            "tolerance": 0.005,
+            "difference": 0.00017028852788825155,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrHi",
+            "expected": 5.803,
+            "obtained": 5.803345095482356,
+            "tolerance": 0.005,
+            "difference": 0.00034509548235650556,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rr",
+            "expected": 2.9999999999999996,
+            "obtained": 2.9999999999999996,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrLo",
+            "expected": 1.5508297114721117,
+            "obtained": 1.5508297114721117,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrHi",
+            "expected": 5.803345095482356,
+            "obtained": 5.803345095482356,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.or",
+            "expected": 3.857142857142857,
+            "obtained": 3.857142857142857,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orLo",
+            "expected": 1.7666027787432017,
+            "obtained": 1.7666027787432017,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orHi",
+            "expected": 8.421559843233334,
+            "obtained": 8.421559843233334,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3,00",
+            "obtained": "3,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "risco-relativo-e-odds-ratio",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+      "originalInput": {
+        "desenho": "caso",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "input": {
+        "desenho": "caso",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "or": 3.857,
+          "orLo": 1.767,
+          "orHi": 8.421
+        },
+        "main": "3,86",
+        "level": "high",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "3,86",
+          ""
+        ],
+        "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "desenho": "caso",
+            "a": 30,
+            "b": 70,
+            "c": 10,
+            "d": 90
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+          "startedAt": "2026-10-05T17:39:41.806Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "risco-relativo-e-odds-ratio",
+              "main": [
+                "3,86",
+                ""
+              ],
+              "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+              "raw": {
+                "rr": 2.9999999999999996,
+                "rrLo": 1.5508297114721117,
+                "rrHi": 5.803345095482356,
+                "or": 3.857142857142857,
+                "orLo": 1.7666027787432017,
+                "orHi": 8.421559843233334
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a77e8495d77e99f3195be30263b394e6b68c6241c7e385b5ea6d5c402281d352",
+          "bytes": 308,
+          "elapsedMs": 3.216600000014296
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "startedAt": "2026-10-05T17:39:41.806Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "risco-relativo-e-odds-ratio",
+            "main": [
+              "3,86",
+              ""
+            ],
+            "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+            "raw": {
+              "rr": 2.9999999999999996,
+              "rrLo": 1.5508297114721117,
+              "rrHi": 5.803345095482356,
+              "or": 3.857142857142857,
+              "orLo": 1.7666027787432017,
+              "orHi": 8.421559843233334
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a77e8495d77e99f3195be30263b394e6b68c6241c7e385b5ea6d5c402281d352",
+        "bytes": 308,
+        "elapsedMs": 3.216600000014296
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "3,86",
+            "obtained": "3,86",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.or",
+            "expected": 3.857,
+            "obtained": 3.857142857142857,
+            "tolerance": 0.005,
+            "difference": 0.00014285714285700024,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.orLo",
+            "expected": 1.767,
+            "obtained": 1.7666027787432017,
+            "tolerance": 0.005,
+            "difference": 0.000397221256798197,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.orHi",
+            "expected": 8.421,
+            "obtained": 8.421559843233334,
+            "tolerance": 0.005,
+            "difference": 0.0005598432333346892,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rr",
+            "expected": 2.9999999999999996,
+            "obtained": 2.9999999999999996,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrLo",
+            "expected": 1.5508297114721117,
+            "obtained": 1.5508297114721117,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrHi",
+            "expected": 5.803345095482356,
+            "obtained": 5.803345095482356,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.or",
+            "expected": 3.857142857142857,
+            "obtained": 3.857142857142857,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orLo",
+            "expected": 1.7666027787432017,
+            "obtained": 1.7666027787432017,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orHi",
+            "expected": 8.421559843233334,
+            "obtained": 8.421559843233334,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3,86",
+            "obtained": "3,86",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "risco-relativo-e-odds-ratio",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+      "originalInput": {
+        "desenho": "coorte",
+        "a": 10,
+        "b": 90,
+        "c": 30,
+        "d": 70
+      },
+      "input": {
+        "desenho": "coorte",
+        "a": 10,
+        "b": 90,
+        "c": 30,
+        "d": 70
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rr": 0.3333,
+          "rrLo": 0.1723,
+          "rrHi": 0.6448
+        },
+        "level": "low",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "0,33",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+        "raw": {
+          "rr": 0.33333333333333337,
+          "rrLo": 0.17231441238579018,
+          "rrHi": 0.6448161217202621,
+          "or": 0.25925925925925924,
+          "orLo": 0.11874284795393257,
+          "orHi": 0.5660582061981252
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "desenho": "coorte",
+            "a": 10,
+            "b": 90,
+            "c": 30,
+            "d": 70
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+          "startedAt": "2026-10-05T17:39:42.119Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "risco-relativo-e-odds-ratio",
+              "main": [
+                "0,33",
+                ""
+              ],
+              "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+              "raw": {
+                "rr": 0.33333333333333337,
+                "rrLo": 0.17231441238579018,
+                "rrHi": 0.6448161217202621,
+                "or": 0.25925925925925924,
+                "orLo": 0.11874284795393257,
+                "orHi": 0.5660582061981252
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b571bbf07247d30b09ac69318054327c330c2842d91ba3dc9fa776bc6a7568be",
+          "bytes": 319,
+          "elapsedMs": 4.049100000003818
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/risco-relativo-e-odds-ratio/calculate",
+        "startedAt": "2026-10-05T17:39:42.119Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "risco-relativo-e-odds-ratio",
+            "main": [
+              "0,33",
+              ""
+            ],
+            "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+            "raw": {
+              "rr": 0.33333333333333337,
+              "rrLo": 0.17231441238579018,
+              "rrHi": 0.6448161217202621,
+              "or": 0.25925925925925924,
+              "orLo": 0.11874284795393257,
+              "orHi": 0.5660582061981252
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b571bbf07247d30b09ac69318054327c330c2842d91ba3dc9fa776bc6a7568be",
+        "bytes": 319,
+        "elapsedMs": 4.049100000003818
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rr",
+            "expected": 0.3333,
+            "obtained": 0.33333333333333337,
+            "tolerance": 0.005,
+            "difference": 0.00003333333333338517,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrLo",
+            "expected": 0.1723,
+            "obtained": 0.17231441238579018,
+            "tolerance": 0.005,
+            "difference": 0.000014412385790169013,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rrHi",
+            "expected": 0.6448,
+            "obtained": 0.6448161217202621,
+            "tolerance": 0.005,
+            "difference": 0.000016121720262107786,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rr",
+            "expected": 0.33333333333333337,
+            "obtained": 0.33333333333333337,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrLo",
+            "expected": 0.17231441238579018,
+            "obtained": 0.17231441238579018,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rrHi",
+            "expected": 0.6448161217202621,
+            "obtained": 0.6448161217202621,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.or",
+            "expected": 0.25925925925925924,
+            "obtained": 0.25925925925925924,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orLo",
+            "expected": 0.11874284795393257,
+            "obtained": 0.11874284795393257,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.orHi",
+            "expected": 0.5660582061981252,
+            "obtained": 0.5660582061981252,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0,33",
+            "obtained": "0,33",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
