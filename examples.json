@@ -1,6 +1,16 @@
 [
   {
-    "label": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+    "id": "risco-relativo-e-odds-ratio",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+    "originalInput": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
     "input": {
       "desenho": "coorte",
       "a": 20,
@@ -20,17 +30,42 @@
       "level": "info",
       "tol": 0.005
     },
+    "recordedResult": {
+      "main": [
+        "2,00",
+        ""
+      ],
+      "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+      "raw": {
+        "rr": 2,
+        "rrLo": 0.9865632012325182,
+        "rrHi": 4.0544792214049545,
+        "or": 2.25,
+        "orLo": 0.9942948858766125,
+        "orHi": 5.091547861615204
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "risco-relativo-e-odds-ratio",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
     "originalInput": {
       "desenho": "coorte",
-      "a": 20,
-      "b": 80,
+      "a": 30,
+      "b": 70,
       "c": 10,
       "d": 90
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
     "input": {
       "desenho": "coorte",
       "a": 30,
@@ -47,17 +82,42 @@
       "level": "high",
       "tol": 0.005
     },
+    "recordedResult": {
+      "main": [
+        "3,00",
+        ""
+      ],
+      "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+      "raw": {
+        "rr": 2.9999999999999996,
+        "rrLo": 1.5508297114721117,
+        "rrHi": 5.803345095482356,
+        "or": 3.857142857142857,
+        "orLo": 1.7666027787432017,
+        "orHi": 8.421559843233334
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "risco-relativo-e-odds-ratio",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
     "originalInput": {
-      "desenho": "coorte",
+      "desenho": "caso",
       "a": 30,
       "b": 70,
       "c": 10,
       "d": 90
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
     "input": {
       "desenho": "caso",
       "a": 30,
@@ -75,17 +135,42 @@
       "level": "high",
       "tol": 0.005
     },
-    "originalInput": {
-      "desenho": "caso",
-      "a": 30,
-      "b": 70,
-      "c": 10,
-      "d": 90
+    "recordedResult": {
+      "main": [
+        "3,86",
+        ""
+      ],
+      "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+      "raw": {
+        "rr": 2.9999999999999996,
+        "rrLo": 1.5508297114721117,
+        "rrHi": 5.803345095482356,
+        "or": 3.857142857142857,
+        "orLo": 1.7666027787432017,
+        "orHi": 8.421559843233334
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+    "id": "risco-relativo-e-odds-ratio",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+    "originalInput": {
+      "desenho": "coorte",
+      "a": 10,
+      "b": 90,
+      "c": 30,
+      "d": 70
+    },
     "input": {
       "desenho": "coorte",
       "a": 10,
@@ -102,13 +187,28 @@
       "level": "low",
       "tol": 0.005
     },
-    "originalInput": {
-      "desenho": "coorte",
-      "a": 10,
-      "b": 90,
-      "c": 30,
-      "d": 70
+    "recordedResult": {
+      "main": [
+        "0,33",
+        ""
+      ],
+      "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+      "raw": {
+        "rr": 0.33333333333333337,
+        "rrLo": 0.17231441238579018,
+        "rrHi": 0.6448161217202621,
+        "or": 0.25925925925925924,
+        "orLo": 0.11874284795393257,
+        "orHi": 0.5660582061981252
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

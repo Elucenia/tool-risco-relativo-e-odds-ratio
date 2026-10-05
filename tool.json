@@ -3,13 +3,14 @@
     "id": "risco-relativo-e-odds-ratio",
     "title": "Risco relativo e odds ratio",
     "short": "Medidas de associação da tabela 2×2 com IC 95%",
+    "desc": "Calcule risco relativo (coorte ou ensaio) ou odds ratio (caso-controle) de uma tabela 2×2, com intervalo de confiança de 95% e diferença de risco.",
+    "lead": "Mede a associação entre uma exposição e um desfecho em estudos de coorte, ensaios clínicos (risco relativo) e estudos caso-controle (odds ratio).",
+    "kind": "Calculadora",
     "spec": [
       "medicina-preventiva-e-social",
       "medicina-de-familia-e-comunidade",
       "medicina-do-trabalho"
     ],
-    "desc": "Calcule risco relativo (coorte ou ensaio) ou odds ratio (caso-controle) de uma tabela 2×2, com intervalo de confiança de 95% e diferença de risco.",
-    "lead": "Mede a associação entre uma exposição e um desfecho em estudos de coorte, ensaios clínicos (risco relativo) e estudos caso-controle (odds ratio).",
     "fields": [
       [
         "desenho",
@@ -68,31 +69,6 @@
       ]
     ],
     "formula": "<p><strong>RR</strong> = [a/(a+b)] / [c/(c+d)], com EP(ln RR) = √(1/a − 1/(a+b) + 1/c − 1/(c+d)) (Katz, 1978).</p><p><strong>OR</strong> = (a × d) / (b × c), com EP(ln OR) = √(1/a + 1/b + 1/c + 1/d) (Woolf, 1955).</p><p>IC 95% = exp(ln medida ± 1,96 × EP). Com alguma casela zero, soma-se 0,5 a todas (correção de Haldane).</p>",
-    "table": [
-      [
-        "Resultado",
-        "Interpretação"
-      ],
-      [
-        "IC 95% todo acima de 1",
-        "Associação positiva (fator de risco)"
-      ],
-      [
-        "IC 95% inclui 1",
-        "Sem associação estatisticamente significativa"
-      ],
-      [
-        "IC 95% todo abaixo de 1",
-        "Associação negativa (fator de proteção)"
-      ]
-    ],
-    "tips": [
-      "Em <strong>estudo caso-controle</strong> só a odds ratio é válida: o pesquisador escolhe quantos casos e controles entram, então a incidência (e o RR) não pode ser calculada.",
-      "Quando o desfecho é raro (menos de 10% nos grupos), a OR se aproxima do RR. Com desfecho frequente, a OR exagera a associação.",
-      "Associação não é causalidade: avalie confusão, viés de seleção e de informação, temporalidade e gradiente dose-resposta.",
-      "Estas são medidas brutas. Para controlar fatores de confusão, use análise estratificada (Mantel-Haenszel) ou regressão.",
-      "Informe também a diferença de risco: um RR de 2 pode significar passar de 1 para 2 por 10 mil ou de 20% para 40%."
-    ],
     "sources": [
       [
         "Katz D, Baptista J, Azen SP, Pike MC. Obtaining confidence intervals for the risk ratio in cohort studies. Biometrics, 1978.",
@@ -105,6 +81,14 @@
       [
         "Bland JM, Altman DG. Statistics Notes: The odds ratio. BMJ, 2000.",
         "https://doi.org/10.1136/bmj.320.7247.1468"
+      ],
+      [
+        "Woolf1955",
+        "https://jhanley.biostat.mcgill.ca/c634/stratified/Woolf.pdf"
+      ],
+      [
+        "Bland/Altman2000",
+        "https://www.bmj.com/content/bmj/320/7247/1468.1.full.pdf"
       ]
     ],
     "cases": [
@@ -189,9 +173,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -204,30 +185,215 @@
       "testedAt": "2026-09-25",
       "total": 1,
       "passed": 1,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "RR/Katz 1978 log CI; OR/Woolf 1955 log CI; correção Haldane 0,5 sezero; 95%z 1,96",
+    "implementationVersion": "risco-relativo-e-odds-ratio@native-2026-10-03+ac576a241fde",
+    "currentMethodSource": "https://doi.org/10.2307/2530610",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "RR = [a/(a+b)] / [c/(c+d)], com EP(ln RR) = √(1/a − 1/(a+b) + 1/c − 1/(c+d)) (Katz, 1978). OR = (a × d) / (b × c), com EP(ln OR) = √(1/a + 1/b + 1/c + 1/d) (Woolf, 1955). IC 95% = exp(ln medida ± 1,96 × EP). Com alguma casela zero, soma-se 0,5 a todas (correção de Haldane).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "desenho",
+            "label": "Desenho do estudo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "coorte": "Coorte ou ensaio clínico",
+              "caso": "Caso-controle"
+            }
+          },
+          {
+            "key": "a",
+            "label": "Expostos <strong>com</strong> o desfecho (a)",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "b",
+            "label": "Expostos <strong>sem</strong> o desfecho (b)",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "c",
+            "label": "Não expostos <strong>com</strong> o desfecho (c)",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "d",
+            "label": "Não expostos <strong>sem</strong> o desfecho (d)",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "b3de165320e1b8aee4805841b2f937c05b6cdd9b31e0afed9f37fec1fe30d94d"
+      },
+      "sourceEditions": [
         {
-          "label": "Riscos idênticos produzem RR=OR=1",
-          "input": {
-            "desenho": "coorte",
-            "a": 30,
-            "b": 70,
-            "c": 60,
-            "d": 140
+          "citation": "Katz D, Baptista J, Azen SP, Pike MC. Obtaining confidence intervals for the risk ratio in cohort studies. Biometrics, 1978.",
+          "url": "https://doi.org/10.2307/2530610",
+          "class": "publisher-deposited-bibliography-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publisherDepositedMetadata": {
+            "title": "Obtaining Confidence Intervals for the Risk Ratio in Cohort Studies",
+            "doi": "10.2307/2530610",
+            "year": 1978,
+            "publisher": "JSTOR",
+            "journal": "Biometrics",
+            "authors": [
+              "D. Katz",
+              "J. Baptista",
+              "S. P. Azen",
+              "M. C. Pike"
+            ],
+            "url": "https://doi.org/10.2307/2530610"
           },
-          "expected": {
-            "rr": 1,
-            "or": 1
+          "publication": {
+            "title": "Obtaining Confidence Intervals for the Risk Ratio in Cohort Studies",
+            "doi": "10.2307/2530610",
+            "year": 1978,
+            "publisher": "JSTOR",
+            "journal": "Biometrics",
+            "authors": [
+              "D. Katz",
+              "J. Baptista",
+              "S. P. Azen",
+              "M. C. Pike"
+            ],
+            "url": "https://doi.org/10.2307/2530610"
+          }
+        },
+        {
+          "citation": "Woolf B. On estimating the relation between blood group and disease. Ann Hum Genet, 1955.",
+          "url": "https://doi.org/10.1111/j.1469-1809.1955.tb01348.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "On estimating the relation between blood group and disease.",
+            "year": "1955",
+            "firstPublicationDate": "1955-06-01",
+            "doi": "10.1111/j.1469-1809.1955.tb01348.x",
+            "pmid": "14388528",
+            "journal": "Annals of human genetics",
+            "authors": "WOOLF B."
           },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14388528/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Bland JM, Altman DG. Statistics Notes: The odds ratio. BMJ, 2000.",
+          "url": "https://doi.org/10.1136/bmj.320.7247.1468",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Statistics notes. The odds ratio.",
+            "year": "2000",
+            "firstPublicationDate": "2000-05-01",
+            "doi": "10.1136/bmj.320.7247.1468",
+            "pmid": "10827061",
+            "pmcid": "PMC1127651",
+            "journal": "BMJ (Clinical research ed.)",
+            "authors": "Bland JM, Altman DG."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1127651/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 1,
+        "passed": 1,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f"
+    },
+    "limits": "Use contagens de dois grupos independentes e do mesmo desfecho binário; esta tabela não modela pares combinados nem taxas por pessoa-tempo. Odds ratio e risco relativo não são a mesma medida e não devem ser apresentados como intercambiáveis. Os intervalos logarítmicos são aproximações; Woolf 1955 ressalta a limitação quando alguma frequência é pequena. Quando alguma célula é zero, esta implementação soma 0,5 a todas as quatro células; essa escolha não prova validade em amostras pequenas. Associação não demonstra causalidade.",
+    "limitsEvidence": {
+      "status": "direct-original-text-and-primary-indexed-method-sections-read",
+      "sources": [
+        {
+          "url": "https://jhanley.biostat.mcgill.ca/c634/stratified/Woolf.pdf",
+          "edition": "Woolf1955",
+          "readScope": "Original-content pages251–253 text read:case/controloddsratio,logvariance reciprocalfourcells,and stated small-frequency limitation. Tables not visually certified."
+        },
+        {
+          "url": "https://www.bmj.com/content/bmj/320/7247/1468.1.full.pdf",
+          "edition": "Bland/Altman2000",
+          "readScope": "Original publisher-indexed text read defining odds and distinguishing probability ratioRR from OR;directPDF403."
+        },
+        {
+          "url": "https://doi.org/10.2307/2530610",
+          "edition": "Katz1978",
+          "readScope": "Original abstract quoted in indexed publication listing read:two independent binomial samples;full original not retrieved."
+        }
+      ],
+      "populationScope": "Independent two-group binary counts;odds ratio is not probability/risk ratio.",
+      "remainingChecks": [
+        "Katz1978 full article not read.",
+        "No exact-interval,matched-table or sparse-cell validation.",
+        "Correction0.5 is code-defined;not certified by originalWoolf full-table comparison."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/risco-relativo-e-odds-ratio/calculator.js",
+    "bytes": 6301,
+    "sha256": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "6e8bf6643b82453d524c17ab46d85e4cfdd31b4d229a641becd2b5a43c92c4ed",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 1,
+      "sha256": "73b41fdd3c27f4e86992cdb599b0f89ffe6cc55b8cbc2770f541356e8fae254b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 1,
+      "sha256": "73b41fdd3c27f4e86992cdb599b0f89ffe6cc55b8cbc2770f541356e8fae254b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

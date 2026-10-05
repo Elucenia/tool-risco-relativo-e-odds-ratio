@@ -1,0 +1,96 @@
+<!-- ELUCENIA technical documentation · risco-relativo-e-odds-ratio · ja · no clinical/professional/rights approval -->
+
+# 相対リスク・オッズ比
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/risco-relativo-e-odds-ratio)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 研究デザイン
+
+`desenho`
+
+- `coorte` — コホート研究または臨床試験
+- `caso` — 症例対照
+
+### 曝露群で転帰あり（a）
+
+`a`
+
+範囲: 0–1000000
+
+### 曝露群で転帰なし（b）
+
+`b`
+
+範囲: 0–1000000
+
+### 非曝露群で転帰あり（c）
+
+`c`
+
+範囲: 0–1000000
+
+### 非曝露群で転帰なし（d）
+
+`d`
+
+範囲: 0–1000000
+
+## 方法の版
+
+RR/Katz 1978対数CI、OR/Woolf 1955対数CI、ゼロ時Haldane 0.5、95% z=1.96
+
+## 記載された計算式
+
+RR = \[a/(a+b)\] / \[c/(c+d)\], 標準誤差(ln RR) = √(1/a − 1/(a+b) + 1/c − 1/(c+d)) (Katz, 1978).
+
+OR = (a × d) / (b × c), 標準誤差(ln OR) = √(1/a + 1/b + 1/c + 1/d) (Woolf, 1955).
+
+信頼区間 95% = exp(ln 指標 ± 1.96 × 標準誤差). ゼロのセルがあれば全セルに0.5加算（Haldane補正）。
+
+## 限界・対象集団
+
+同じ二値アウトカムについて二つの独立群の件数を用いてください。この表はマッチしたペアや人時間あたりの率を扱いません。オッズ比と相対リスクは同じ指標ではなく、互換として示してはいけません。対数区間は近似であり、Woolf 1955 はいずれかのセルの件数が少ない場合の限界を指摘しています。いずれかのセルがゼロの場合、この実装は四つすべてのセルに 0.5 を加えます。この選択は小標本での妥当性を証明しません。関連は因果関係を証明しません。
+
+## 参考文献
+
+- [Katz D, Baptista J, Azen SP, Pike MC. Obtaining confidence intervals for the risk ratio in cohort studies. Biometrics, 1978.](https://doi.org/10.2307/2530610)
+
+- [Woolf B. On estimating the relation between blood group and disease. Ann Hum Genet, 1955.](https://doi.org/10.1111/j.1469-1809.1955.tb01348.x)
+
+- [Bland JM, Altman DG. Statistics Notes: The odds ratio. BMJ, 2000.](https://doi.org/10.1136/bmj.320.7247.1468)
+
+- [Woolf1955](https://jhanley.biostat.mcgill.ca/c634/stratified/Woolf.pdf)
+
+- [Bland/Altman2000](https://www.bmj.com/content/bmj/320/7247/1468.1.full.pdf)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

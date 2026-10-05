@@ -1,0 +1,678 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field desenho",
+    "input": {
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "desenho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field desenho",
+    "input": {
+      "desenho": "",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "desenho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option desenho",
+    "input": {
+      "desenho": "__ELUCENIA_INVALID_OPTION__",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "desenho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field a",
+    "input": {
+      "desenho": "coorte",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field a",
+    "input": {
+      "desenho": "coorte",
+      "a": "",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" a",
+    "input": {
+      "desenho": "coorte",
+      "a": "NaN",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" a",
+    "input": {
+      "desenho": "coorte",
+      "a": "Infinity",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" a",
+    "input": {
+      "desenho": "coorte",
+      "a": "1e309",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" a",
+    "input": {
+      "desenho": "coorte",
+      "a": "invalid",
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} a",
+    "input": {
+      "desenho": "coorte",
+      "a": {},
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true a",
+    "input": {
+      "desenho": "coorte",
+      "a": true,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum a",
+    "input": {
+      "desenho": "coorte",
+      "a": -1,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum a",
+    "input": {
+      "desenho": "coorte",
+      "a": 1100000,
+      "b": 80,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": "",
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": "NaN",
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": "Infinity",
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": "1e309",
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": "invalid",
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": {},
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": true,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": -1,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum b",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 1100000,
+      "c": 10,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": "",
+      "d": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": "NaN",
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": "Infinity",
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": "1e309",
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": "invalid",
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": {},
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": true,
+      "d": 90
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": -1,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum c",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 1100000,
+      "d": 90
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum d",
+    "input": {
+      "desenho": "coorte",
+      "a": 20,
+      "b": 80,
+      "c": 10,
+      "d": 1100000
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
