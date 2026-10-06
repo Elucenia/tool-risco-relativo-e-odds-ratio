@@ -1,0 +1,2790 @@
+{
+  "id": "risco-relativo-e-odds-ratio",
+  "implementationVersion": "risco-relativo-e-odds-ratio@native-2026-10-05+ebd85183dcf0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risco nos expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risco nos não expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferença de risco (risco atribuível)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,25 (IC 95%: 0,99 a 5,09)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem associação estatisticamente significativa: o IC 95% inclui 1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risco nos expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risco nos não expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferença de risco (risco atribuível)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associação positiva (fator de risco): o IC 95% não inclui 1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risco relativo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "não estimável em estudo caso-controle (a proporção de casos é definida pelo pesquisador)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associação positiva (fator de risco): o IC 95% não inclui 1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risco nos expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risco nos não expostos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferença de risco (risco atribuível)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-20,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,26 (IC 95%: 0,12 a 0,57)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associação negativa (fator de proteção): o IC 95% não inclui 1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risk in exposed",
+                "locale": "en",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risk in the non-exposed",
+                "locale": "en",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risk difference (attributable risk)",
+                "locale": "en",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "en",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2.25 (95% CI: 0.99 to 5.09)",
+                "locale": "en",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No statistically significant association: the 95% CI includes 1",
+            "locale": "en",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risk in exposed",
+                "locale": "en",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risk in the non-exposed",
+                "locale": "en",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risk difference (attributable risk)",
+                "locale": "en",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "en",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86 (95% CI: 1.77 to 8.42)",
+                "locale": "en",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Positive association (risk factor): the 95% CI does not include 1",
+            "locale": "en",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "en",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86 (95% CI: 1.77 to 8.42)",
+                "locale": "en",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Relative risk",
+                "locale": "en",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "not estimable in a case-control study (the proportion of cases is defined by the researcher)",
+                "locale": "en",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Positive association (risk factor): the 95% CI does not include 1",
+            "locale": "en",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risk in exposed",
+                "locale": "en",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risk in the non-exposed",
+                "locale": "en",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risk difference (attributable risk)",
+                "locale": "en",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20.0%",
+                "locale": "en",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "en",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0.26 (95% CI: 0.12 to 0.57)",
+                "locale": "en",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Negative association (protective factor): the 95% CI does not include 1",
+            "locale": "en",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riesgo en los expuestos",
+                "locale": "es",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Riesgo en los no expuestos",
+                "locale": "es",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferencia de riesgo (riesgo atribuible)",
+                "locale": "es",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "es",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2,25 (IC 95%: 0,99 a 5,09)",
+                "locale": "es",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No hay asociación estadísticamente significativa: el IC 95% incluye 1",
+            "locale": "es",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riesgo en los expuestos",
+                "locale": "es",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Riesgo en los no expuestos",
+                "locale": "es",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferencia de riesgo (riesgo atribuible)",
+                "locale": "es",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "es",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "es",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Asociación positiva (factor de riesgo): el IC 95% no incluye 1",
+            "locale": "es",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "es",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "es",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Riesgo relativo",
+                "locale": "es",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "no estimable en un estudio de casos y controles (la proporción de casos es definida por el investigador)",
+                "locale": "es",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Asociación positiva (factor de riesgo): el IC 95% no incluye 1",
+            "locale": "es",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riesgo en los expuestos",
+                "locale": "es",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Riesgo en los no expuestos",
+                "locale": "es",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Diferencia de riesgo (riesgo atribuible)",
+                "locale": "es",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20,0%",
+                "locale": "es",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "es",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0,26 (IC 95%: 0,12 a 0,57)",
+                "locale": "es",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Asociación negativa (factor protector): el IC 95% no incluye 1",
+            "locale": "es",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risque chez les exposés",
+                "locale": "fr",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risque chez les non-exposés",
+                "locale": "fr",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Différence de risque (risque attribuable)",
+                "locale": "fr",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "fr",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2,25 (IC 95% : 0,99 à 5,09)",
+                "locale": "fr",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Aucune association statistiquement significative : l’IC 95% inclut 1",
+            "locale": "fr",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risque chez les exposés",
+                "locale": "fr",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risque chez les non-exposés",
+                "locale": "fr",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Différence de risque (risque attribuable)",
+                "locale": "fr",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "fr",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95% : 1,77 à 8,42)",
+                "locale": "fr",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Association positive (facteur de risque) : l’IC 95% n’inclut pas 1",
+            "locale": "fr",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "fr",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95% : 1,77 à 8,42)",
+                "locale": "fr",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risque relatif",
+                "locale": "fr",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "non estimable dans une étude cas-témoins (la proportion de cas est définie par le chercheur)",
+                "locale": "fr",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Association positive (facteur de risque) : l’IC 95% n’inclut pas 1",
+            "locale": "fr",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risque chez les exposés",
+                "locale": "fr",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risque chez les non-exposés",
+                "locale": "fr",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Différence de risque (risque attribuable)",
+                "locale": "fr",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20,0%",
+                "locale": "fr",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "fr",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0,26 (IC 95% : 0,12 à 0,57)",
+                "locale": "fr",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Association négative (facteur de protection) : l’IC 95% n’inclut pas 1",
+            "locale": "fr",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risiko bei den Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risiko bei den Nicht-Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risikodifferenz (attributables Risiko)",
+                "locale": "de",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds Ratio",
+                "locale": "de",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2,25 (95%-KI: 0,99 bis 5,09)",
+                "locale": "de",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine statistisch signifikante Assoziation: das 95%-KI enthält 1",
+            "locale": "de",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risiko bei den Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risiko bei den Nicht-Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risikodifferenz (attributables Risiko)",
+                "locale": "de",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds Ratio",
+                "locale": "de",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (95%-KI: 1,77 bis 8,42)",
+                "locale": "de",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Positive Assoziation (Risikofaktor): das 95%-KI enthält 1 nicht",
+            "locale": "de",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds Ratio",
+                "locale": "de",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (95%-KI: 1,77 bis 8,42)",
+                "locale": "de",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Relatives Risiko",
+                "locale": "de",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "in einer Fall-Kontroll-Studie nicht schätzbar (der Anteil der Fälle wird vom Forscher festgelegt)",
+                "locale": "de",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Positive Assoziation (Risikofaktor): das 95%-KI enthält 1 nicht",
+            "locale": "de",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Risiko bei den Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Risiko bei den Nicht-Exponierten",
+                "locale": "de",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risikodifferenz (attributables Risiko)",
+                "locale": "de",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20,0%",
+                "locale": "de",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds Ratio",
+                "locale": "de",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0,26 (95%-KI: 0,12 bis 0,57)",
+                "locale": "de",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Negative Assoziation (Schutzfaktor): das 95%-KI enthält 1 nicht",
+            "locale": "de",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rischio negli esposti",
+                "locale": "it",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rischio nei non esposti",
+                "locale": "it",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Differenza di rischio (rischio attribuibile)",
+                "locale": "it",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "it",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2,25 (IC 95%: 0,99 a 5,09)",
+                "locale": "it",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessuna associazione statisticamente significativa: l’IC 95% include 1",
+            "locale": "it",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rischio negli esposti",
+                "locale": "it",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rischio nei non esposti",
+                "locale": "it",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Differenza di rischio (rischio attribuibile)",
+                "locale": "it",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "it",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "it",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associazione positiva (fattore di rischio): l’IC 95% non include 1",
+            "locale": "it",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "it",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3,86 (IC 95%: 1,77 a 8,42)",
+                "locale": "it",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rischio relativo",
+                "locale": "it",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "non stimabile in uno studio caso-controllo (la proporzione di casi è definita dal ricercatore)",
+                "locale": "it",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associazione positiva (fattore di rischio): l’IC 95% non include 1",
+            "locale": "it",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rischio negli esposti",
+                "locale": "it",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rischio nei non esposti",
+                "locale": "it",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Differenza di rischio (rischio attribuibile)",
+                "locale": "it",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20,0%",
+                "locale": "it",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Odds ratio",
+                "locale": "it",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0,26 (IC 95%: 0,12 a 0,57)",
+                "locale": "it",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Associazione negativa (fattore protettivo): l’IC 95% non include 1",
+            "locale": "it",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الخطر لدى المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "٢٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطر لدى غير المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "١٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "فرق الخطر (الخطر المنسوب)",
+                "locale": "ar",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "١٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة الأرجحية",
+                "locale": "ar",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "٢٫٢٥ (فاصل الثقة 95%: ٠٫٩٩ إلى ٥٫٠٩)",
+                "locale": "ar",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد علاقة ذات دلالة إحصائية: فترة الثقة 95% تشمل 1",
+            "locale": "ar",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الخطر لدى المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "٣٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطر لدى غير المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "١٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "فرق الخطر (الخطر المنسوب)",
+                "locale": "ar",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "٢٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة الأرجحية",
+                "locale": "ar",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "٣٫٨٦ (فاصل الثقة 95%: ١٫٧٧ إلى ٨٫٤٢)",
+                "locale": "ar",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ارتباط إيجابي (عامل خطر): فاصل الثقة 95% لا يشمل 1",
+            "locale": "ar",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة الأرجحية",
+                "locale": "ar",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "٣٫٨٦ (فاصل الثقة 95%: ١٫٧٧ إلى ٨٫٤٢)",
+                "locale": "ar",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطر النسبي",
+                "locale": "ar",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "غير قابل للتقدير في دراسة حالة-شاهد (نسبة الحالات يحددها الباحث)",
+                "locale": "ar",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ارتباط إيجابي (عامل خطر): فاصل الثقة 95% لا يشمل 1",
+            "locale": "ar",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الخطر لدى المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "١٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطر لدى غير المعرّضين",
+                "locale": "ar",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "٣٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "فرق الخطر (الخطر المنسوب)",
+                "locale": "ar",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "؜-٢٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة الأرجحية",
+                "locale": "ar",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "٠٫٢٦ (فاصل الثقة 95%: ٠٫١٢ إلى ٠٫٥٧)",
+                "locale": "ar",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ارتباط سلبي (عامل وقائي): فاصل الثقة 95% لا يشمل 1",
+            "locale": "ar",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "风险差（归因风险）",
+                "locale": "zh",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "比值比",
+                "locale": "zh",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2.25（95% CI：0.99 至 5.09）",
+                "locale": "zh",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无统计学显著关联：95% CI 包含 1",
+            "locale": "zh",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "风险差（归因风险）",
+                "locale": "zh",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "比值比",
+                "locale": "zh",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86（95% CI：1.77 至 8.42）",
+                "locale": "zh",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正相关（危险因素）：95% CI 不包含 1",
+            "locale": "zh",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "比值比",
+                "locale": "zh",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86（95% CI：1.77 至 8.42）",
+                "locale": "zh",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "相对危险度",
+                "locale": "zh",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "在病例对照研究中不可估计（病例比例由研究者定义）",
+                "locale": "zh",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正相关（危险因素）：95% CI 不包含 1",
+            "locale": "zh",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非暴露组风险",
+                "locale": "zh",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "风险差（归因风险）",
+                "locale": "zh",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20.0%",
+                "locale": "zh",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "比值比",
+                "locale": "zh",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0.26（95% CI：0.12 至 0.57）",
+                "locale": "zh",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "负相关（保护因素）：95% CI 不包含 1",
+            "locale": "zh",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "リスク差（寄与危険度）",
+                "locale": "ja",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "オッズ比",
+                "locale": "ja",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2.25（95% CI: 0.99～5.09）",
+                "locale": "ja",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "統計学的に有意な関連はありません：95% CI に 1 が含まれます",
+            "locale": "ja",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "リスク差（寄与危険度）",
+                "locale": "ja",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "オッズ比",
+                "locale": "ja",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86（95% CI: 1.77～8.42）",
+                "locale": "ja",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正の関連（危険因子）：95% CI に 1 は含まれません",
+            "locale": "ja",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "オッズ比",
+                "locale": "ja",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86（95% CI: 1.77～8.42）",
+                "locale": "ja",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "相対リスク",
+                "locale": "ja",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "症例対照研究では推定不能（症例の割合は研究者によって定義される）",
+                "locale": "ja",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正の関連（危険因子）：95% CI に 1 は含まれません",
+            "locale": "ja",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非曝露群のリスク",
+                "locale": "ja",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "リスク差（寄与危険度）",
+                "locale": "ja",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20.0%",
+                "locale": "ja",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "オッズ比",
+                "locale": "ja",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0.26（95% CI: 0.12～0.57）",
+                "locale": "ja",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "負の関連（保護因子）：95% CI に 1 は含まれません",
+            "locale": "ja",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनएक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "जोखिम अंतर (एट्रिब्यूटेबल जोखिम)",
+                "locale": "hi",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "ऑड्स अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "2.25 (95% CI: 0.99 से 5.09)",
+                "locale": "hi",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  2.25,
+                  0.99,
+                  5.09
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कोई सांख्यिकीय रूप से महत्वपूर्ण संबद्धता नहीं: 95% CI में 1 शामिल है",
+            "locale": "hi",
+            "template": "documented-authored-2fe74d9abaf241a5e6e6"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनएक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "जोखिम अंतर (एट्रिब्यूटेबल जोखिम)",
+                "locale": "hi",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "20.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "ऑड्स अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86 (95% CI: 1.77 से 8.42)",
+                "locale": "hi",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सकारात्मक संबद्धता (जोखिम कारक): 95% CI में 1 शामिल नहीं है",
+            "locale": "hi",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ऑड्स अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "3.86 (95% CI: 1.77 से 8.42)",
+                "locale": "hi",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  3.86,
+                  1.77,
+                  8.42
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सापेक्ष जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-065f0b5c1a9c805e61db"
+              },
+              "value": {
+                "text": "केस-कंट्रोल अध्ययन में अनुमानित नहीं (केसों का अनुपात शोधकर्ता द्वारा परिभाषित किया जाता है)",
+                "locale": "hi",
+                "template": "documented-authored-3ed2c93ea41e11071ec8"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सकारात्मक संबद्धता (जोखिम कारक): 95% CI में 1 शामिल नहीं है",
+            "locale": "hi",
+            "template": "documented-authored-72487d5f3513de59ec2d"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c4713eb61593484661c7"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनएक्सपोज़्ड में जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-c14b633fc5585e88f666"
+              },
+              "value": {
+                "text": "30.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "जोखिम अंतर (एट्रिब्यूटेबल जोखिम)",
+                "locale": "hi",
+                "template": "documented-authored-9ba5127f153403893cee"
+              },
+              "value": {
+                "text": "-20.0%",
+                "locale": "hi",
+                "template": "documented-authored-533658d4d10bf9aad5c7",
+                "sourceNumbers": [
+                  -20
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "ऑड्स अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1b2203de5da947e7a95d"
+              },
+              "value": {
+                "text": "0.26 (95% CI: 0.12 से 0.57)",
+                "locale": "hi",
+                "template": "documented-authored-20766758ce43e8f54d9a",
+                "sourceNumbers": [
+                  0.26,
+                  0.12,
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "नकारात्मक संबद्धता (संरक्षणात्मक कारक): 95% CI में 1 शामिल नहीं है",
+            "locale": "hi",
+            "template": "documented-authored-dae9d31393748ed215a7"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

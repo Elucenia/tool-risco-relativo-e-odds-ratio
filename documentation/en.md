@@ -94,3 +94,53 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No statistically significant association: the 95% CI includes 1
+
+| Result details | |
+| --- | --- |
+| Risk in exposed | 20.0% |
+| Risk in the non-exposed | 10.0% |
+| Risk difference (attributable risk) | 10.0% |
+| Odds ratio | 2.25 (95% CI: 0.99 to 5.09) |
+
+
+### 2
+
+Positive association (risk factor): the 95% CI does not include 1
+
+| Result details | |
+| --- | --- |
+| Risk in exposed | 30.0% |
+| Risk in the non-exposed | 10.0% |
+| Risk difference (attributable risk) | 20.0% |
+| Odds ratio | 3.86 (95% CI: 1.77 to 8.42) |
+
+
+### 3
+
+Positive association (risk factor): the 95% CI does not include 1
+
+| Result details | |
+| --- | --- |
+| Odds ratio | 3.86 (95% CI: 1.77 to 8.42) |
+| Relative risk | not estimable in a case-control study (the proportion of cases is defined by the researcher) |
+
+
+### 4
+
+Negative association (protective factor): the 95% CI does not include 1
+
+| Result details | |
+| --- | --- |
+| Risk in exposed | 10.0% |
+| Risk in the non-exposed | 30.0% |
+| Risk difference (attributable risk) | -20.0% |
+| Odds ratio | 0.26 (95% CI: 0.12 to 0.57) |
+

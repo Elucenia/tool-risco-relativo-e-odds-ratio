@@ -1,0 +1,356 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "risco-relativo-e-odds-ratio",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "d337cbd0130727006252f358a1bf712a23169520",
+    "oldEngineSha256": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f",
+    "currentEngineSha256": "ebd85183dcf080571899e9f7a85976695b8fdb73642673ff5fd4103b4b11efcf"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Coorte 20/100 expostos e 10/100 não expostos: RR 2,0 (IC 0,99 a 4,05), não significativo",
+      "input": {
+        "desenho": "coorte",
+        "a": 20,
+        "b": 80,
+        "c": 10,
+        "d": 90
+      },
+      "publicOutput": {
+        "id": "risco-relativo-e-odds-ratio",
+        "main": [
+          "2,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+        "raw": {
+          "rr": 2,
+          "rrLo": 0.9865632012325182,
+          "rrHi": 4.0544792214049545,
+          "or": 2.25,
+          "orLo": 0.9942948858766125,
+          "orHi": 5.091547861615204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rr": 2,
+          "rrLo": 0.987,
+          "rrHi": 4.054,
+          "or": 2.25,
+          "orLo": 0.994,
+          "orHi": 5.092
+        },
+        "level": "info",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,99 a 4,05)",
+        "level": "info",
+        "verdict": "Sem associação estatisticamente significativa: o IC 95% inclui 1",
+        "rows": [
+          [
+            "Risco nos expostos",
+            "20,0%"
+          ],
+          [
+            "Risco nos não expostos",
+            "10,0%"
+          ],
+          [
+            "Diferença de risco (risco atribuível)",
+            "10,0%"
+          ],
+          [
+            "Odds ratio",
+            "2,25 (IC 95%: 0,99 a 5,09)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rr": 2,
+          "rrLo": 0.9865632012325182,
+          "rrHi": 4.0544792214049545,
+          "or": 2.25,
+          "orLo": 0.9942948858766125,
+          "orHi": 5.091547861615204
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Coorte 30/100 e 10/100: RR 3,0 (IC 1,55 a 5,80)",
+      "input": {
+        "desenho": "coorte",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "publicOutput": {
+        "id": "risco-relativo-e-odds-ratio",
+        "main": [
+          "3,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rr": 3,
+          "rrLo": 1.551,
+          "rrHi": 5.803
+        },
+        "level": "high",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3,00",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 1,55 a 5,80)",
+        "level": "high",
+        "verdict": "Associação positiva (fator de risco): o IC 95% não inclui 1",
+        "rows": [
+          [
+            "Risco nos expostos",
+            "30,0%"
+          ],
+          [
+            "Risco nos não expostos",
+            "10,0%"
+          ],
+          [
+            "Diferença de risco (risco atribuível)",
+            "20,0%"
+          ],
+          [
+            "Odds ratio",
+            "3,86 (IC 95%: 1,77 a 8,42)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Caso-controle com as mesmas caselas: OR 3,86 (IC 1,77 a 8,42)",
+      "input": {
+        "desenho": "caso",
+        "a": 30,
+        "b": 70,
+        "c": 10,
+        "d": 90
+      },
+      "publicOutput": {
+        "id": "risco-relativo-e-odds-ratio",
+        "main": [
+          "3,86",
+          ""
+        ],
+        "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "or": 3.857,
+          "orLo": 1.767,
+          "orHi": 8.421
+        },
+        "main": "3,86",
+        "level": "high",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3,86",
+          ""
+        ],
+        "label": "Odds ratio (OR) (IC 95%: 1,77 a 8,42)",
+        "level": "high",
+        "verdict": "Associação positiva (fator de risco): o IC 95% não inclui 1",
+        "rows": [
+          [
+            "Odds ratio",
+            "3,86 (IC 95%: 1,77 a 8,42)"
+          ],
+          [
+            "Risco relativo",
+            "não estimável em estudo caso-controle (a proporção de casos é definida pelo pesquisador)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rr": 2.9999999999999996,
+          "rrLo": 1.5508297114721117,
+          "rrHi": 5.803345095482356,
+          "or": 3.857142857142857,
+          "orLo": 1.7666027787432017,
+          "orHi": 8.421559843233334
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Coorte 10/100 e 30/100: RR 0,33 (IC 0,17 a 0,64), proteção",
+      "input": {
+        "desenho": "coorte",
+        "a": 10,
+        "b": 90,
+        "c": 30,
+        "d": 70
+      },
+      "publicOutput": {
+        "id": "risco-relativo-e-odds-ratio",
+        "main": [
+          "0,33",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+        "raw": {
+          "rr": 0.33333333333333337,
+          "rrLo": 0.17231441238579018,
+          "rrHi": 0.6448161217202621,
+          "or": 0.25925925925925924,
+          "orLo": 0.11874284795393257,
+          "orHi": 0.5660582061981252
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rr": 0.3333,
+          "rrLo": 0.1723,
+          "rrHi": 0.6448
+        },
+        "level": "low",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0,33",
+          ""
+        ],
+        "label": "Risco relativo (RR) (IC 95%: 0,17 a 0,64)",
+        "level": "low",
+        "verdict": "Associação negativa (fator de proteção): o IC 95% não inclui 1",
+        "rows": [
+          [
+            "Risco nos expostos",
+            "10,0%"
+          ],
+          [
+            "Risco nos não expostos",
+            "30,0%"
+          ],
+          [
+            "Diferença de risco (risco atribuível)",
+            "-20,0%"
+          ],
+          [
+            "Odds ratio",
+            "0,26 (IC 95%: 0,12 a 0,57)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rr": 0.33333333333333337,
+          "rrLo": 0.17231441238579018,
+          "rrHi": 0.6448161217202621,
+          "or": 0.25925925925925924,
+          "orLo": 0.11874284795393257,
+          "orHi": 0.5660582061981252
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

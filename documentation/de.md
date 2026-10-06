@@ -94,3 +94,53 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Keine statistisch signifikante Assoziation: das 95%-KI enthält 1
+
+| Ergebnisdetails | |
+| --- | --- |
+| Risiko bei den Exponierten | 20,0% |
+| Risiko bei den Nicht-Exponierten | 10,0% |
+| Risikodifferenz (attributables Risiko) | 10,0% |
+| Odds Ratio | 2,25 (95%-KI: 0,99 bis 5,09) |
+
+
+### 2
+
+Positive Assoziation (Risikofaktor): das 95%-KI enthält 1 nicht
+
+| Ergebnisdetails | |
+| --- | --- |
+| Risiko bei den Exponierten | 30,0% |
+| Risiko bei den Nicht-Exponierten | 10,0% |
+| Risikodifferenz (attributables Risiko) | 20,0% |
+| Odds Ratio | 3,86 (95%-KI: 1,77 bis 8,42) |
+
+
+### 3
+
+Positive Assoziation (Risikofaktor): das 95%-KI enthält 1 nicht
+
+| Ergebnisdetails | |
+| --- | --- |
+| Odds Ratio | 3,86 (95%-KI: 1,77 bis 8,42) |
+| Relatives Risiko | in einer Fall-Kontroll-Studie nicht schätzbar (der Anteil der Fälle wird vom Forscher festgelegt) |
+
+
+### 4
+
+Negative Assoziation (Schutzfaktor): das 95%-KI enthält 1 nicht
+
+| Ergebnisdetails | |
+| --- | --- |
+| Risiko bei den Exponierten | 10,0% |
+| Risiko bei den Nicht-Exponierten | 30,0% |
+| Risikodifferenz (attributables Risiko) | -20,0% |
+| Odds Ratio | 0,26 (95%-KI: 0,12 bis 0,57) |
+

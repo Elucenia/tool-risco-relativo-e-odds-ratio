@@ -188,7 +188,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "RR/Katz 1978 log CI; OR/Woolf 1955 log CI; correção Haldane 0,5 sezero; 95%z 1,96",
-    "implementationVersion": "risco-relativo-e-odds-ratio@native-2026-10-03+ac576a241fde",
+    "implementationVersion": "risco-relativo-e-odds-ratio@native-2026-10-05+ebd85183dcf0",
     "currentMethodSource": "https://doi.org/10.2307/2530610",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -341,7 +341,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f"
+      "implementationHash": "ebd85183dcf080571899e9f7a85976695b8fdb73642673ff5fd4103b4b11efcf",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "risco-relativo-e-odds-ratio@native-2026-10-03+ac576a241fde",
+          "previousImplementationHash": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f",
+          "implementationHash": "ebd85183dcf080571899e9f7a85976695b8fdb73642673ff5fd4103b4b11efcf",
+          "scientificBodySha256": "d1cc479a5b6105289f0b73950adc090dc1ae837ed3fddb23bf958a6985bdbe24",
+          "metadataContractHash": "b3de165320e1b8aee4805841b2f937c05b6cdd9b31e0afed9f37fec1fe30d94d",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Use contagens de dois grupos independentes e do mesmo desfecho binário; esta tabela não modela pares combinados nem taxas por pessoa-tempo. Odds ratio e risco relativo não são a mesma medida e não devem ser apresentados como intercambiáveis. Os intervalos logarítmicos são aproximações; Woolf 1955 ressalta a limitação quando alguma frequência é pequena. Quando alguma célula é zero, esta implementação soma 0,5 a todas as quatro células; essa escolha não prova validade em amostras pequenas. Associação não demonstra causalidade.",
     "limitsEvidence": {
@@ -377,20 +405,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/risco-relativo-e-odds-ratio/calculator.js",
-    "bytes": 6301,
-    "sha256": "ac576a241fdea001502c6adc0b99c8badf8346424274aedf57d1a0d15ea05b3f"
+    "bytes": 6506,
+    "sha256": "ebd85183dcf080571899e9f7a85976695b8fdb73642673ff5fd4103b4b11efcf"
   },
-  "sourceToolSha256": "6e8bf6643b82453d524c17ab46d85e4cfdd31b4d229a641becd2b5a43c92c4ed",
+  "sourceToolSha256": "b93f3a92bc4990d3b353e12498f1cfd12d9dfe165130f314e893b7d750442559",
   "omittedFullReferenceBanks": [
     {
       "rows": 1,
       "sha256": "73b41fdd3c27f4e86992cdb599b0f89ffe6cc55b8cbc2770f541356e8fae254b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 1,
       "sha256": "73b41fdd3c27f4e86992cdb599b0f89ffe6cc55b8cbc2770f541356e8fae254b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

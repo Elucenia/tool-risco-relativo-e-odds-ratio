@@ -94,3 +94,53 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sem associação estatisticamente significativa: o IC 95% inclui 1
+
+| Detalhes do resultado | |
+| --- | --- |
+| Risco nos expostos | 20,0% |
+| Risco nos não expostos | 10,0% |
+| Diferença de risco (risco atribuível) | 10,0% |
+| Odds ratio | 2,25 (IC 95%: 0,99 a 5,09) |
+
+
+### 2
+
+Associação positiva (fator de risco): o IC 95% não inclui 1
+
+| Detalhes do resultado | |
+| --- | --- |
+| Risco nos expostos | 30,0% |
+| Risco nos não expostos | 10,0% |
+| Diferença de risco (risco atribuível) | 20,0% |
+| Odds ratio | 3,86 (IC 95%: 1,77 a 8,42) |
+
+
+### 3
+
+Associação positiva (fator de risco): o IC 95% não inclui 1
+
+| Detalhes do resultado | |
+| --- | --- |
+| Odds ratio | 3,86 (IC 95%: 1,77 a 8,42) |
+| Risco relativo | não estimável em estudo caso-controle (a proporção de casos é definida pelo pesquisador) |
+
+
+### 4
+
+Associação negativa (fator de proteção): o IC 95% não inclui 1
+
+| Detalhes do resultado | |
+| --- | --- |
+| Risco nos expostos | 10,0% |
+| Risco nos não expostos | 30,0% |
+| Diferença de risco (risco atribuível) | -20,0% |
+| Odds ratio | 0,26 (IC 95%: 0,12 a 0,57) |
+
